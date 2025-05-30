@@ -1,0 +1,236 @@
+Uri: https://clubecirurgiadermatologica.com.br/cddd-inscricao/
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\cddd-inscricao\index.htm
+Content Type: text/html
+
+Uri: https://clubecirurgiadermatologica.com.br/comments/feed/
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://clubecirurgiadermatologica.com.br/feed/
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/cache/background-css/1/clubecirurgiadermatologica.com.br/wp-content/uploads/elementor/css/post-274.css?ver=1748563710&wpr_t=1748570244
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\cache\background-css\1\clubecirurgiadermatologica.com.br\wp-content\uploads\elementor\css\post-274.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/cache/background-css/1/clubecirurgiadermatologica.com.br/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17&wpr_t=1748570244
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\cache\background-css\1\clubecirurgiadermatologica.com.br\wp-includes\js\mediaelement\mediaelementplayer-legacy.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/cache/min/1/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=1748575102
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\cache\min\1\wp-content\plugins\jet-engine\assets\css\frontend.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1748575103
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\cache\min\1\wp-content\uploads\elementor\google-fonts\css\roboto.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1748575103
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\cache\min\1\wp-content\uploads\elementor\google-fonts\css\robotoslab.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor-pro/assets/css/widget-off-canvas.min.css?ver=3.28.3
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor-pro\assets\css\widget-off-canvas.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\frontend.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-heading.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-icon-box.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-image-box.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-image.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-nested-accordion.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/css/widget-video.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\css\widget-video.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInDown.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInLeft.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInRight.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.28.4
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInUp.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/wp-rocket/assets/img/youtube.png
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\wp-rocket\assets\img\youtube.png
+Content Type: image/png
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\wp-rocket\assets\js\lazyload\17.8.3\lazyload.min.js
+Content Type: application/javascript
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\plugins\wp-rocket\assets\js\wpr-beacon.min.js
+Content Type: application/javascript
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.2.1
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\themes\hello-elementor\header-footer.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/themes/hello-elementor/style.min.css?ver=3.2.1
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\themes\hello-elementor\style.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/themes/hello-elementor/theme.min.css?ver=3.2.1
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\themes\hello-elementor\theme.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_Obrigado.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_Obrigado.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_Tablet-1.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_Tablet-1.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_Tablet.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_Tablet.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_TopoWEBP.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_TopoWEBP.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_Topo_Mobile.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_Topo_Mobile.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/BG_Topo_WEBP.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\BG_Topo_WEBP.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/FavIcon.svg
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\FavIcon.svg
+Content Type: image/svg+xml
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/OpenSans-Bold.woff2
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\OpenSans-Bold.woff2
+Content Type: font/woff2
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/OpenSans-Regular.woff2
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\OpenSans-Regular.woff2
+Content Type: font/woff2
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/Ubuntu-Bold.woff2
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\Ubuntu-Bold.woff2
+Content Type: font/woff2
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/Ubuntu-Medium.woff2
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\Ubuntu-Medium.woff2
+Content Type: font/woff2
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/Ubuntu-Regular.woff2
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\01\Ubuntu-Regular.woff2
+Content Type: font/woff2
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Bruna-244x300.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\04\Foto-Bruna-244x300.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Bruna.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\04\Foto-Bruna.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Matheus-244x300.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\04\Foto-Matheus-244x300.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Matheus.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\04\Foto-Matheus.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/IMG_Mid01-300x254.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\IMG_Mid01-300x254.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/IMG_Mid01.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\IMG_Mid01.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-300x96.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Logo_Topo-300x96.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-768x245.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Logo_Topo-768x245.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Logo_Topo.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1-150x150.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1-150x150.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1-300x300.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1-300x300.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1.webp
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\2025\05\Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1-1.webp
+Content Type: image/webp
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1748259465
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-content\uploads\elementor\css\post-6.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-includes/js/mediaelement/mejs-controls.svg
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-includes\js\mediaelement\mejs-controls.svg
+Content Type: image/svg+xml
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.1
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-includes\js\mediaelement\wp-mediaelement.min.css
+Content Type: text/css
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-json/
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-json/oembed/1.0/embed?url=https:%2F%2Fclubecirurgiadermatologica.com.br%2Fcddd-inscricao%2F
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-json/oembed/1.0/embed?url=https:%2F%2Fclubecirurgiadermatologica.com.br%2Fcddd-inscricao%2F&format=xml
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://clubecirurgiadermatologica.com.br/wp-json/wp/v2/pages/274
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\wp-json\wp\v2\pages\274
+Content Type: application/json
+
+Uri: https://clubecirurgiadermatologica.com.br/xmlrpc.php?rsd
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\xmlrpc.php
+Content Type: text/xml
+
+Uri: https://stats.wp.com/e-202522.js
+File Name: E:\Clones\clubecirurgiadermatologica.com.br\e-202522.js
+Content Type: application/javascript
+

@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Cirurgia Dermatológica do Dia a Dia - Clube Cirurgia Dermatológica</title>
+	<link rel="canonical" href="index.htm">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Cirurgia Dermatológica do Dia a Dia - Clube Cirurgia Dermatológica">
+	<meta property="og:description" content="Domine o essencial com segurança QUERO PARTICIPAR DO CIRURGIA DERMATOLÓGICA DO DIA A DIA O que é o Cirurgia Dermatológica do dia a dia? É um curso 100% online criado para médicos que trabalham com dermatologia e desejam aprender os princípios teóricos da cirurgia dermatológica básica — com segurança, clareza e aplicação prática no dia [&hellip;]">
+	<meta property="og:url" content="https://clubecirurgiadermatologica.com.br/cddd-inscricao/">
+	<meta property="og:site_name" content="Clube Cirurgia Dermatológica">
+	<meta property="article:modified_time" content="2025-05-30T00:07:05+00:00">
+	<meta property="og:image" content="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp">
+	<meta property="og:image:width" content="983">
+	<meta property="og:image:height" content="314">
+	<meta property="og:image:type" content="image/webp">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. tempo de leitura">
+	<meta name="twitter:data1" content="10 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/","url":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/","name":"Cirurgia Dermatológica do Dia a Dia - Clube Cirurgia Dermatológica","isPartOf":{"@id":"https://clubecirurgiadermatologica.com.br/#website"},"primaryImageOfPage":{"@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/#primaryimage"},"image":{"@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/#primaryimage"},"thumbnailUrl":"https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp","datePublished":"2025-01-28T16:57:30+00:00","dateModified":"2025-05-30T00:07:05+00:00","breadcrumb":{"@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://clubecirurgiadermatologica.com.br/cddd-inscricao/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/#primaryimage","url":"https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp","contentUrl":"https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp","width":983,"height":314},{"@type":"BreadcrumbList","@id":"https://clubecirurgiadermatologica.com.br/cddd-inscricao/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://clubecirurgiadermatologica.com.br/"},{"@type":"ListItem","position":2,"name":"Cirurgia Dermatológica do Dia a Dia"}]},{"@type":"WebSite","@id":"https://clubecirurgiadermatologica.com.br/#website","url":"https://clubecirurgiadermatologica.com.br/","name":"Clube Cirurgia Dermatológica","description":"A Cirurgia Dermatológica mora nos detalhes!","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://clubecirurgiadermatologica.com.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com'>
+
+<link rel="alternate" type="application/rss+xml" title="Feed para Clube Cirurgia Dermatológica &raquo;" href="../feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Clube Cirurgia Dermatológica &raquo;" href="../comments/feed/index.htm">
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='../wp-content/cache/background-css/1/clubecirurgiadermatologica.com.br/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17&wpr_t=1748570244' media='all'>
+<link rel='stylesheet' id='wp-mediaelement-css' href='../wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.1' media='all'>
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<link data-minify="1" rel='stylesheet' id='jet-engine-frontend-css' href='../wp-content/cache/min/1/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=1748575102' media='all'>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='../wp-content/themes/hello-elementor/style.min.css?ver=3.2.1' media='all'>
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='../wp-content/themes/hello-elementor/theme.min.css?ver=3.2.1' media='all'>
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='../wp-content/themes/hello-elementor/header-footer.min.css?ver=3.2.1' media='all'>
+<link rel='stylesheet' id='elementor-frontend-css' href='../wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='elementor-post-6-css' href='../wp-content/uploads/elementor/css/post-6.css?ver=1748259465' media='all'>
+<link rel='stylesheet' id='widget-image-css' href='../wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-heading-css' href='../wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-video-css' href='../wp-content/plugins/elementor/assets/css/widget-video.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInRight-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInDown-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-icon-box-css' href='../wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-nested-accordion-css' href='../wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-off-canvas-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-off-canvas.min.css?ver=3.28.3' media='all'>
+<link rel='stylesheet' id='widget-image-box-css' href='../wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='elementor-post-274-css' href='../wp-content/cache/background-css/1/clubecirurgiadermatologica.com.br/wp-content/uploads/elementor/css/post-274.css?ver=1748563710&wpr_t=1748570244' media='all'>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-18a2827f-a26d-42fb-8c32-d5e687277d02) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1748575103' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1748575103' media='all'>
+<link rel="https://api.w.org/" href="../wp-json/index.htm"><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/274"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.1">
+<link rel='shortlink' href='https://clubecirurgiadermatologica.com.br/?p=274'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclubecirurgiadermatologica.com.br%2Fcddd-inscricao%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-1?url=https%3A%2F%2Fclubecirurgiadermatologica.com.br%2Fcddd-inscricao%2F&#038;format=xml">
+	<style>img#wpstats{display:none}</style>
+		<meta name="generator" content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://servidor.clubecirurgiadermatologica.com.br/gtm.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','id=GTM-NZRZTCWF');</script>
+<!-- End Google Tag Manager -->
+<link rel="preload" href="../wp-content/uploads/2025/01/Ubuntu-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="../wp-content/uploads/2025/01/Ubuntu-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="../wp-content/uploads/2025/01/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="../wp-content/uploads/2025/01/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="../wp-content/uploads/2025/01/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+
+<link href="../wp-content/uploads/2025/01/BG_TopoWEBP.webp" rel="preload" as="image" media="(min-width: 1025px)">
+<link href="../wp-content/uploads/2025/01/BG_Topo_Mobile.webp" rel="preload" as="image" media="(max-width: 767px)">
+<link href="../wp-content/uploads/2025/01/BG_Tablet-1.webp" rel="preload" as="image" media="(min-width: 768px) and (max-width: 1024px)">
+<link href="../wp-content/uploads/2025/01/BG_Obrigado.webp" rel="preload" as="image" media="(min-width: 1025px)">
+<link href="../wp-content/uploads/2025/01/BG_Tablet.webp" rel="preload" as="image" media="(max-width: 1024px)">
+
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="../wp-content/uploads/2025/01/FavIcon.svg" sizes="32x32">
+<link rel="icon" href="../wp-content/uploads/2025/01/FavIcon.svg" sizes="192x192">
+<link rel="apple-touch-icon" href="../wp-content/uploads/2025/01/FavIcon.svg">
+<meta name="msapplication-TileImage" content="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/01/FavIcon.svg">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.mejs-overlay-button{--wpr-bg-28cedfd6-3d69-48d6-afc3-d4c3cfb2174a: url('../wp-includes/js/mediaelement/mejs-controls.svg');}.mejs-overlay-loading-bg-img{--wpr-bg-3b023de1-0ec8-4dc4-ac17-1fe97665d40f: url('../wp-includes/js/mediaelement/mejs-controls.svg');}.mejs-button>button{--wpr-bg-99d67e4e-11e3-4fae-a2ba-7a2a95195bdc: url('../wp-includes/js/mediaelement/mejs-controls.svg');}.elementor-274 .elementor-element.elementor-element-79d1490:not(.elementor-motion-effects-element-type-background), .elementor-274 .elementor-element.elementor-element-79d1490 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-a440c587-dd60-4e3e-8e3c-bb9629ede16d: url('../wp-content/uploads/2025/01/BG_Topo_WEBP.webp');}.rll-youtube-player .play{--wpr-bg-18a2827f-a26d-42fb-8c32-d5e687277d02: url('../wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".mejs-overlay-button","style":".mejs-overlay-button{--wpr-bg-28cedfd6-3d69-48d6-afc3-d4c3cfb2174a: url('https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg');}","hash":"28cedfd6-3d69-48d6-afc3-d4c3cfb2174a","url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg"},{"selector":".mejs-overlay-loading-bg-img","style":".mejs-overlay-loading-bg-img{--wpr-bg-3b023de1-0ec8-4dc4-ac17-1fe97665d40f: url('https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg');}","hash":"3b023de1-0ec8-4dc4-ac17-1fe97665d40f","url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg"},{"selector":".mejs-button>button","style":".mejs-button>button{--wpr-bg-99d67e4e-11e3-4fae-a2ba-7a2a95195bdc: url('https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg');}","hash":"99d67e4e-11e3-4fae-a2ba-7a2a95195bdc","url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-includes\/js\/mediaelement\/mejs-controls.svg"},{"selector":".elementor-274 .elementor-element.elementor-element-79d1490:not(.elementor-motion-effects-element-type-background), .elementor-274 .elementor-element.elementor-element-79d1490 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-274 .elementor-element.elementor-element-79d1490:not(.elementor-motion-effects-element-type-background), .elementor-274 .elementor-element.elementor-element-79d1490 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-a440c587-dd60-4e3e-8e3c-bb9629ede16d: url('https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/uploads\/2025\/01\/BG_Topo_WEBP.webp');}","hash":"a440c587-dd60-4e3e-8e3c-bb9629ede16d","url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/uploads\/2025\/01\/BG_Topo_WEBP.webp"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-18a2827f-a26d-42fb-8c32-d5e687277d02: url('https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"18a2827f-a26d-42fb-8c32-d5e687277d02","url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.18.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_minify_css wpr_preload_links wpr_desktop"></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-274 wp-embed-responsive wp-theme-hello-elementor elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-274">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://servidor.clubecirurgiadermatologica.com.br/ns.html?id=GTM-NZRZTCWF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div data-rocket-location-hash="3f153abacdf487d1f8606c51db042d88" data-elementor-type="wp-page" data-elementor-id="274" class="elementor elementor-274" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-79d1490 e-flex e-con-boxed e-con e-parent" data-id="79d1490" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="da3b654b339ed49f0234db69a353a170" class="e-con-inner">
+				<div class="elementor-element elementor-element-f9cef3d elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="f9cef3d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="800" height="256" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20256'%3E%3C/svg%3E" class="attachment-large size-large wp-image-725" alt="" data-lazy-srcset="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp 983w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-300x96.webp 300w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-768x245.webp 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp"><noscript><img fetchpriority="high" decoding="async" width="800" height="256" src="../wp-content/uploads/2025/05/Logo_Topo.webp" class="attachment-large size-large wp-image-725" alt="" srcset="../wp-content/uploads/2025/05/Logo_Topo.webp 983w,   ../wp-content/uploads/2025/05/Logo_Topo-300x96.webp 300w,   ../wp-content/uploads/2025/05/Logo_Topo-768x245.webp 768w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-394f9d7 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="394f9d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Domine o essencial com segurança</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b672272 elementor-widget__width-initial elementor-widget elementor-widget-video" data-id="b672272" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;vimeo&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/uploads\/2025\/02\/Thumb_VideoVendas.webp&quot;,&quot;id&quot;:368,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;}}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<div class="rll-youtube-player" data-src="https://www.youtube.com/embed/F81Gh34ITGY" data-id="F81Gh34ITGY" data-query="feature=oembed&amp;color=BB9412E3&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1" data-alt="Reprodutor de vídeo youtube"></div><noscript><iframe class="elementor-video-iframe" allowfullscreen="" allow="clipboard-write" title="Reprodutor de vídeo youtube" src="https://www.youtube.com/embed/F81Gh34ITGY?feature=oembed&color=BB9412E3&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1"></iframe></noscript>				<div data-bg="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/02/Thumb_VideoVendas.webp" class="elementor-custom-embed-image-overlay rocket-lazyload" style="">
+														</div>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9c03cc8 elementor-widget elementor-widget-button" data-id="9c03cc8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-98ec104 e-flex e-con-boxed e-con e-parent" data-id="98ec104" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="db09287dc3941bcac9abe956715ef14a" class="e-con-inner">
+		<div class="elementor-element elementor-element-33b9f1b e-con-full e-flex e-con e-child" data-id="33b9f1b" data-element_type="container">
+				<div class="elementor-element elementor-element-020175b elementor-invisible elementor-widget elementor-widget-image" data-id="020175b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="622" height="526" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20622%20526'%3E%3C/svg%3E" class="attachment-large size-large wp-image-726" alt="" data-lazy-srcset="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/IMG_Mid01.webp 622w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/IMG_Mid01-300x254.webp 300w" data-lazy-sizes="(max-width: 622px) 100vw, 622px" data-lazy-src="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/IMG_Mid01.webp"><noscript><img decoding="async" width="622" height="526" src="../wp-content/uploads/2025/05/IMG_Mid01.webp" class="attachment-large size-large wp-image-726" alt="" srcset="../wp-content/uploads/2025/05/IMG_Mid01.webp 622w,   ../wp-content/uploads/2025/05/IMG_Mid01-300x254.webp 300w" sizes="(max-width: 622px) 100vw, 622px"></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7ff55fa e-con-full e-flex e-con e-child" data-id="7ff55fa" data-element_type="container">
+				<div class="elementor-element elementor-element-7d132e1 elementor-invisible elementor-widget elementor-widget-heading" data-id="7d132e1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O que é o Cirurgia Dermatológica do dia a dia?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6b5cc8b elementor-widget elementor-widget-heading" data-id="6b5cc8b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">É um curso 100% online criado para médicos que trabalham com dermatologia e desejam aprender os princípios teóricos da cirurgia dermatológica básica — com segurança, clareza e aplicação prática no dia a dia.
+<br><br>Você vai aprender a executar com confiança os procedimentos básicos mais frequentes na rotina da dermatologia: desde a avaliação da lesão até a escolha da técnica adequada, instrumentação, cirurgia e cuidados no pós-operatório.
+</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ad7cf6d e-flex e-con-boxed e-con e-parent" data-id="ad7cf6d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="7d0ce0601f4dee916c7ce6cc61b61694" class="e-con-inner">
+				<div class="elementor-element elementor-element-090d97c elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="090d97c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Para quem é o curso Cirurgia Dermatológica do Dia a Dia?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8b33b59 elementor-widget elementor-widget-heading" data-id="8b33b59" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Este curso é para você que...</p>				</div>
+				</div>
+		<div class="elementor-element elementor-element-eda8d52 e-con-full e-flex e-con e-child" data-id="eda8d52" data-element_type="container">
+				<div class="elementor-element elementor-element-6f38856 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-position-top elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="6f38856" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M45 35.4121V40.8498C45 42.8249 43.8375 44.5874 42.0375 45.4124C39.85 46.4125 36.5375 47.5 32.5 47.5C28.4625 47.5 25.15 46.4125 22.95 45.4124C21.1625 44.5874 20 42.8249 20 40.8498V35.4121L28.8875 39.4748C30.025 39.9998 31.25 40.2623 32.5 40.2623C33.75 40.2623 34.975 39.9998 36.1125 39.4748L45 35.4121Z" fill="black"></path><path d="M50 33.1246V41.2498C50 41.9373 49.4375 42.4998 48.75 42.4998C48.0625 42.4998 47.5 41.9373 47.5 41.2498V34.2746L50 33.1246Z" fill="black"></path><path d="M29.9225 37.2047C30.7412 37.5784 31.62 37.7659 32.5 37.7659C33.38 37.7659 34.2575 37.5797 35.0775 37.2047L51.0413 29.9069C51.9413 29.4957 52.5 28.6244 52.5 27.6331C52.5 26.6418 51.9413 25.7693 51.0413 25.3581L35.0775 18.0616C33.4388 17.3128 31.5625 17.3128 29.9238 18.0616L13.9588 25.3568C13.0588 25.7693 12.5 26.6406 12.5 27.6319C12.5 28.6232 13.0588 29.4944 13.9588 29.9069L29.9225 37.2047Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Está na pós-graduação em dermatologia					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5e0f6f8 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-position-top elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="5e0f6f8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C21.4543 12.5 12.5 21.4543 12.5 32.5C12.5 43.5457 21.4543 52.5 32.5 52.5C43.5457 52.5 52.5 43.5457 52.5 32.5C52.5 21.4543 43.5457 12.5 32.5 12.5ZM41.3186 25.5029L37.99 34.98C37.4957 36.3886 36.3871 37.4971 34.9786 37.9929L25.5014 41.3214C24.37 41.7186 23.2829 40.6314 23.68 39.5L27.0086 30.0229C27.5029 28.6143 28.6114 27.5057 30.0214 27.01L39.4986 23.6814C40.6286 23.2843 41.7157 24.3714 41.3186 25.5029Z" fill="black"></path><path d="M32.5 34.33C33.5107 34.33 34.33 33.5107 34.33 32.5C34.33 31.4893 33.5107 30.67 32.5 30.67C31.4893 30.67 30.67 31.4893 30.67 32.5C30.67 33.5107 31.4893 34.33 32.5 34.33Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Percebe que a teoria da cirurgia dermatológica foi pouco explorada em sua formação					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bba218f elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-position-top elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="bba218f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M49.4719 31.4293V19.9748C49.4719 19.5871 49.2834 19.212 48.9692 18.9744C48.6551 18.7368 48.253 18.6618 47.876 18.7743C43.7544 19.9248 39.3186 18.7618 36.3028 15.7356L33.4 12.847C32.9225 12.3843 32.0932 12.3843 31.6157 12.847L28.7129 15.7356C27.3757 17.0758 25.7334 18.0753 23.9253 18.6493L46.9336 41.5457C48.6048 38.457 49.4719 35.0182 49.4719 31.4293ZM52.1321 50.2516L14.6604 12.9633C14.5445 12.8439 14.4059 12.7486 14.2526 12.6831C14.0993 12.6175 13.9344 12.583 13.7675 12.5816C13.6007 12.5802 13.4352 12.6118 13.2808 12.6747C13.1263 12.7375 12.986 12.8304 12.868 12.9478C12.7501 13.0652 12.6568 13.2048 12.5936 13.3585C12.5304 13.5122 12.4986 13.6769 12.5 13.8429C12.5015 14.0089 12.5362 14.173 12.602 14.3256C12.6679 14.4782 12.7636 14.6161 12.8836 14.7315L16.9349 18.7631C16.6145 18.7218 16.2852 18.7756 16.0352 18.9744C15.721 19.212 15.5325 19.5871 15.5325 19.9748V31.4293C15.5325 41.4707 22.3935 50.1241 32.2201 52.4625C32.3081 52.4875 32.4086 52.5 32.5091 52.5C32.6096 52.5 32.7102 52.4875 32.7981 52.4625C37.1497 51.4227 41.0702 49.0657 44.0195 45.7161L50.3553 52.0198C50.4717 52.1363 50.6101 52.2288 50.7626 52.2919C50.915 52.355 51.0785 52.3875 51.2437 52.3875C51.4088 52.3875 51.5723 52.355 51.7248 52.2919C51.8772 52.2288 52.0157 52.1363 52.1321 52.0198C52.3677 51.7853 52.5 51.4673 52.5 51.1357C52.5 50.8041 52.3677 50.4861 52.1321 50.2516ZM32.5091 45.3972C29.5707 44.4146 27.0174 42.5369 25.2109 40.03C23.4044 37.5231 22.4363 34.5141 22.4438 31.4293V25.9646C22.9489 25.9071 23.4491 25.8321 23.9429 25.737L39.1414 40.8617C37.3949 42.9551 35.099 44.5252 32.5091 45.3972Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Se sente inseguro(a) para realizar procedimentos cirúrgicos simples					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a90ab2f elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-position-top elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="a90ab2f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M47.4291 19.1051L33.6524 12.7046L33.4389 12.6185C32.8225 12.4605 32.1767 12.4605 31.5602 12.6185L31.3468 12.7046L17.57 19.1051C16.9193 19.4072 16.3741 19.9003 16.0059 20.52C15.6377 21.1396 15.4636 21.8569 15.5063 22.578L15.9902 30.7293C16.2648 35.4177 17.8556 39.9307 20.5771 43.7421C23.2986 47.5534 27.0386 50.5061 31.361 52.2557C31.7232 52.4202 32.1166 52.5034 32.5138 52.4997C32.8914 52.5055 33.2656 52.4271 33.6097 52.2701C37.9374 50.5248 41.6834 47.574 44.4101 43.7623C47.1369 39.9506 48.7319 35.4353 49.0089 30.7437L49.4928 22.5924C49.5385 21.8689 49.3658 21.1485 48.9974 20.526C48.629 19.9035 48.0822 19.4081 47.4291 19.1051ZM39.9715 29.1507L32.3715 37.7613C32.2478 37.904 32.0974 38.0205 31.9289 38.1043C31.7603 38.188 31.577 38.2373 31.3895 38.2492H31.3183C30.9607 38.2519 30.6152 38.1187 30.3505 37.8761L25.1273 33.0255C24.8499 32.7667 24.6858 32.4073 24.6711 32.0265C24.6564 31.6457 24.7923 31.2746 25.049 30.9948C25.3057 30.7151 25.6621 30.5496 26.0397 30.5348C26.4174 30.52 26.7854 30.6571 27.0629 30.9159L31.2187 34.7763L37.8366 27.2564C38.0907 26.9897 38.437 26.8322 38.8034 26.8167C39.1698 26.8012 39.528 26.9289 39.8033 27.1732C40.0786 27.4175 40.2498 27.7595 40.2811 28.1279C40.3124 28.4963 40.2015 28.8627 39.9715 29.1507Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Já atua com dermatologia clínica, mas quer aprender a operar o básico com segurança					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f7f3e00 elementor-widget elementor-widget-heading" data-id="f7f3e00" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Você vai aprender, entre outras coisas:</p>				</div>
+				</div>
+		<div class="elementor-element elementor-element-73ded94 e-con-full e-flex e-con e-child" data-id="73ded94" data-element_type="container">
+				<div class="elementor-element elementor-element-783d163 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="783d163" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						As principais indicações da cirurgia dermatológica no consultório					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-634f6bc elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="634f6bc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Como escolher e utilizar os instrumentais básicos					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-edd4cc6 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="edd4cc6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Técnicas seguras para biópsias, exéreses e suturas					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-933fed5 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="933fed5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Como fazer o fechamento correto da pele					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b5f0282 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="b5f0282" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Como evitar erros comuns no início da prática cirúrgica					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-deb63ba elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="deb63ba" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Como melhorar o resultado de suas cicatrizes					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9bebc5e elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="9bebc5e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none"><rect width="65" height="65" rx="32.5" fill="#FF9A0B"></rect><path d="M32.5 12.5C28.5444 12.5 24.6776 13.673 21.3886 15.8706C18.0996 18.0682 15.5362 21.1918 14.0224 24.8463C12.5087 28.5008 12.1126 32.5222 12.8843 36.4018C13.656 40.2814 15.5608 43.8451 18.3579 46.6421C21.1549 49.4392 24.7186 51.344 28.5982 52.1157C32.4778 52.8874 36.4992 52.4913 40.1537 50.9776C43.8082 49.4638 46.9318 46.9004 49.1294 43.6114C51.327 40.3224 52.5 36.4556 52.5 32.5C52.5 27.1957 50.3929 22.1086 46.6421 18.3579C42.8914 14.6071 37.8043 12.5 32.5 12.5ZM43.8667 27.675L31.3167 41.9083C31.1141 42.1365 30.8685 42.3224 30.594 42.4554C30.3194 42.5884 30.0213 42.6659 29.7167 42.6833H29.5667C28.9982 42.6868 28.4488 42.4789 28.025 42.1L21.3083 36.1417C20.8464 35.7317 20.5663 35.155 20.5296 34.5385C20.4928 33.9219 20.7025 33.3161 21.1125 32.8542C21.5225 32.3922 22.0992 32.1121 22.7157 32.0754C23.3322 32.0387 23.9381 32.2483 24.4 32.6583L29.4 37.0667L40.4083 24.5667C40.8172 24.1036 41.3933 23.822 42.0098 23.7837C42.6263 23.7454 43.2328 23.9536 43.6958 24.3625C44.1589 24.7714 44.4405 25.3474 44.4788 25.964C44.5171 26.5805 44.3089 27.187 43.9 27.65L43.8667 27.675Z" fill="black"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Como valorizar seus procedimentos em cirurgia dermatológica					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1df7605 elementor-invisible elementor-widget elementor-widget-button" data-id="1df7605" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO ENTRAR NO CIRURGIA DERMATOLÓGICA DO DIA A DIA</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-59e9ff1 e-flex e-con-boxed e-con e-parent" data-id="59e9ff1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="456ea9f7c556a7611a63847305a63a95" class="e-con-inner">
+				<div class="elementor-element elementor-element-984c073 elementor-invisible elementor-widget elementor-widget-heading" data-id="984c073" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O curso por dentro</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-43842b0 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="43842b0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Confira tudo o que você vai encontrar ao entrar no </span><b>Cirurgia Dermatológica do Dia a Dia</b></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7f03f1f sanfona-gradiente elementor-invisible elementor-widget elementor-widget-n-accordion" data-id="7f03f1f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;default_state&quot;:&quot;expanded&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}" data-widget_type="nested-accordion.default">
+				<div class="elementor-widget-container">
+							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+						<details id="e-n-accordion-item-1330" class="e-n-accordion-item" open="">
+				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="true" aria-controls="e-n-accordion-item-1330">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> CONCEITOS, LIMITES E NORMAS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1330" class="elementor-element elementor-element-99fccbd e-con-full e-flex e-con e-child" data-id="99fccbd" data-element_type="container">
+				<div class="elementor-element elementor-element-2dc943a elementor-widget elementor-widget-text-editor" data-id="2dc943a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Conceitos e Limites da Cirurgia Dermatológica</span></p></li><li><p>Normas exigidas para que seja realizado a cirurgia dermatológica</p></li><li><p>TCLE</p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1331" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1331">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> DOMINE O MAIS IMPORTANTE EM CIRURGIA DERMATOLÓGICA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1331" class="elementor-element elementor-element-e501320 e-con-full e-flex e-con e-child" data-id="e501320" data-element_type="container">
+				<div class="elementor-element elementor-element-9a73840 elementor-widget elementor-widget-text-editor" data-id="9a73840" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">A visão do nosso método de ensino em 4 passos – A aula mais importante do CCD</span></p></li><li><p><span style="font-weight: 400;">Jornada do paciente e relação médico – paciente</span></p></li><li><p><span style="font-weight: 400;">Como explicar o diagnóstico ao paciente</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1332" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1332">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> CHECK LIST ANTES DA CIRURGIA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1332" class="elementor-element elementor-element-fbb60d0 e-con-full e-flex e-con e-child" data-id="fbb60d0" data-element_type="container">
+				<div class="elementor-element elementor-element-f9bcdfa elementor-widget elementor-widget-text-editor" data-id="f9bcdfa" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Perfil do paciente</span></p></li><li><p><span style="font-weight: 400;">Exames complementares</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1333" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1333">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> A BASE DA CIRURGIA DERMATOLÓGICA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1333" class="elementor-element elementor-element-1d03efa e-con-full e-flex e-con e-child" data-id="1d03efa" data-element_type="container">
+				<div class="elementor-element elementor-element-6fc9901 elementor-widget elementor-widget-text-editor" data-id="6fc9901" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Materiais cirúrgicos básicos em cirurgia dermatológica</span></p></li><li><p><span style="font-weight: 400;">Posição do paciente e marcação cirúrgica / Paramentação / Assepsia</span></p></li><li><p><span style="font-weight: 400;">Anestesia local na prática da cirurgia dermatológica</span></p></li><li><p><span style="font-weight: 400;">Incisão em Cirurgia Dermatológica </span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1334" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="5" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1334">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> HEMOSTASIA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1334" class="elementor-element elementor-element-15a92b2 e-con-full e-flex e-con e-child" data-id="15a92b2" data-element_type="container">
+				<div class="elementor-element elementor-element-0e0cbb0 elementor-widget elementor-widget-text-editor" data-id="0e0cbb0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Principal tipo de sutura para hemostasia</span></p></li><li><p><span style="font-weight: 400;">Principais agentes hemostáticos em cirurgia dermatológica</span></p></li><li><p><span style="font-weight: 400;">Hemostasia com eletrocautério</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1335" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="6" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1335">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> FECHAMENTO DA FERIDA OPERATÓRIA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1335" class="elementor-element elementor-element-63c6ef9 e-con-full e-flex e-con e-child" data-id="63c6ef9" data-element_type="container">
+				<div class="elementor-element elementor-element-7157773 elementor-widget elementor-widget-text-editor" data-id="7157773" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Linhas de força da pele</span></p></li><li><p><span style="font-weight: 400;">Principais tipos de sutura em cirurgia dermatológica</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1336" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="7" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1336">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> ANATOMIA ASSOCIADA A CIRURGIA DERMATOLÓGICA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1336" class="elementor-element elementor-element-d196ccb e-con-full e-flex e-con e-child" data-id="d196ccb" data-element_type="container">
+				<div class="elementor-element elementor-element-0ce4b64 elementor-widget elementor-widget-text-editor" data-id="0ce4b64" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Noções de anatomia da superfície da face</span></p></li><li><p><span>Áreas de risco da face</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1337" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="8" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1337">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> BIÓPSIAS INCISIONAIS DE LESÕES BENIGNAS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1337" class="elementor-element elementor-element-dfe9f74 e-con-full e-flex e-con e-child" data-id="dfe9f74" data-element_type="container">
+				<div class="elementor-element elementor-element-2868b32 elementor-widget elementor-widget-text-editor" data-id="2868b32" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Biópsia em dermatologia clínica – casos especiais (lesões bolhosas, vasculite)</span></p></li><li><p><span style="font-weight: 400;">Biópsia por punch – como fazer no dia a dia</span></p></li><li><p><span style="font-weight: 400;">Biópsia em fuso – como fazer na prática</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1338" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="9" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1338">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> BIÓPSIAS INCISIONAIS DE LESÕES MALIGNAS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1338" class="elementor-element elementor-element-08671d7 e-con-full e-flex e-con e-child" data-id="08671d7" data-element_type="container">
+				<div class="elementor-element elementor-element-4e1b9be elementor-widget elementor-widget-text-editor" data-id="4e1b9be" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Biópsia incisional de lesões suspeitas de CPNM</span></p></li><li><p><span style="font-weight: 400;">Raciocínio das biópsias de lesões suspeitas de melanoma</span></p></li><li><p><span style="font-weight: 400;">Biópsia por punch – como fazer no dia a dia</span></p></li><li><p><span style="font-weight: 400;">Biópsia em fuso – como fazer na prática</span></p></li><li><p><span style="font-weight: 400;">Biópsias comentadas </span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1339" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="10" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1339">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> BIÓPSIA DO APARELHO UNGUEAL </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1339" class="elementor-element elementor-element-3ca9f27 e-con-full e-flex e-con e-child" data-id="3ca9f27" data-element_type="container">
+				<div class="elementor-element elementor-element-fe521b5 elementor-widget elementor-widget-text-editor" data-id="fe521b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p>Anatomia do aparelho ungueal</p></li><li><p>Raciocínio para abordagem das biópsias ungueais</p></li><li><p>⁠Técnicas de biópsias ungueais</p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13310" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="11" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13310">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> BIÓPSIAS EXCISIONAIS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13310" class="elementor-element elementor-element-4326ee6 e-con-full e-flex e-con e-child" data-id="4326ee6" data-element_type="container">
+				<div class="elementor-element elementor-element-b57ae0d elementor-widget elementor-widget-text-editor" data-id="b57ae0d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Anatomia de um fuso perfeito em uma biópsia excisional – como pensar em sua confecção</span></p></li><li><p><span style="font-weight: 400;">Cirurgia em fuso comentada – o básico bem feito</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13311" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="12" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13311">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> LIPOMAS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13311" class="elementor-element elementor-element-f7ecf34 e-con-full e-flex e-con e-child" data-id="f7ecf34" data-element_type="container">
+				<div class="elementor-element elementor-element-89dfaea elementor-widget elementor-widget-text-editor" data-id="89dfaea" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Abordagem e cirurgia de pequenos lipomas </span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13312" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="13" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13312">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> CISTOS EPIDÉRMICOS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13312" class="elementor-element elementor-element-f3d7735 e-con-full e-flex e-con e-child" data-id="f3d7735" data-element_type="container">
+				<div class="elementor-element elementor-element-4917ea5 elementor-widget elementor-widget-text-editor" data-id="4917ea5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Abordagem e cirurgia de cistos epidérmicos</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13313" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="14" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13313">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> SHAVING E ELETROCAUTERIZAÇÃO </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13313" class="elementor-element elementor-element-870f138 e-con-full e-flex e-con e-child" data-id="870f138" data-element_type="container">
+				<div class="elementor-element elementor-element-aedd7c5 elementor-widget elementor-widget-text-editor" data-id="aedd7c5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Shaving e curetagem</span></p></li><li><p><span style="font-weight: 400;">Eletrocauterização</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13314" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="15" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13314">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> CIRURGIA DE ONICOCRIPTOSE </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13314" class="elementor-element elementor-element-e27e15a e-con-full e-flex e-con e-child" data-id="e27e15a" data-element_type="container">
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13315" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="16" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13315">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> CIRURGIAS COMENTADAS </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13315" class="elementor-element elementor-element-d2ad378 e-con-full e-flex e-con e-child" data-id="d2ad378" data-element_type="container">
+				<div class="elementor-element elementor-element-3f6a88d elementor-widget elementor-widget-text-editor" data-id="3f6a88d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Cirurgia Dermatológica do Dia a Dia Comentada 1 – tórax anterior</span></p></li><li><span style="font-weight: 400;">Cirurgia Dermatológica do Dia a Dia Comentada 2 &#8211; face</span></li><li><span style="font-weight: 400;">Cirurgia Dermatológica do Dia a Dia Comentada 3 &#8211; membro</span></li><li><span style="font-weight: 400;">Cirurgia Dermatológica do Dia a Dia Comentada 4 &#8211; face</span></li><li><span style="font-weight: 400;">Cirurgia Dermatológica do Dia a Dia Comentada 5 &#8211; dorso</span></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13316" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="17" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13316">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> PRECIFICAÇÃO EM CIRURGIA DERMATOLÓGICA </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13316" class="elementor-element elementor-element-86eff2a e-con-full e-flex e-con e-child" data-id="86eff2a" data-element_type="container">
+				<div class="elementor-element elementor-element-c1679be elementor-widget elementor-widget-text-editor" data-id="c1679be" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p>Raciocínio por de trás da precificação</p></li><li><p>⁠Como precificar &#8211; por um analista de custos</p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-13317" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="18" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-13317">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> PÓS-OPERATÓRIO </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-13317" class="elementor-element elementor-element-b5fe8fa e-con-full e-flex e-con e-child" data-id="b5fe8fa" data-element_type="container">
+				<div class="elementor-element elementor-element-71d4b70 elementor-widget elementor-widget-text-editor" data-id="71d4b70" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li><p><span style="font-weight: 400;">Orientações</span></p></li><li><p><span style="font-weight: 400;">Como acompanhar o paciente no pós-operatório</span></p></li><li><p><span style="font-weight: 400;">Principais complicações</span></p></li></ul>								</div>
+				</div>
+				</div>
+					</details>
+					</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d5b2bcc e-flex e-con-boxed e-con e-parent" data-id="d5b2bcc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="0b77f88eca57d1f1b60428c6e9049c86" class="e-con-inner">
+		<div class="elementor-element elementor-element-591d1e4 e-con-full e-flex e-con e-child" data-id="591d1e4" data-element_type="container" id="oferta" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-dd8af3d e-con-full e-flex elementor-invisible e-con e-child" data-id="dd8af3d" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+				<div class="elementor-element elementor-element-369d7bf elementor-widget elementor-widget-heading" data-id="369d7bf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Qual é o investimento?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-275b4c2 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="275b4c2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Ao entrar para o Clube de Cirurgia Dermatológica, você receberá:</p><ul><li><span style="font-weight: 400;">1 ano de acesso a todo o conteúdo mencionado acima;</span></li><li><span style="font-weight: 400;">Acesso ao Mentor CCD &#8211; nossa IA treinada em Cirurgia Dermatológica</span></li><li><b>[BÔNUS] </b><span style="font-weight: 400;">Gravação das aulas &#8211; Sala de Cirurgia;</span></li><li><b>[BÔNUS]</b><span style="font-weight: 400;"> Encontro mensal para tirar dúvidas ao vivo </span></li><li><b>[BÔNUS] </b><span style="font-weight: 400;">Acesso por 2 anos para  quem se inscrever nas próximas 24 horas</span></li></ul>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-788a9de e-con-full e-flex elementor-invisible e-con e-child" data-id="788a9de" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-1e1b454 elementor-widget elementor-widget-image" data-id="1e1b454" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="800" height="256" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20256'%3E%3C/svg%3E" class="attachment-large size-large wp-image-725" alt="" data-lazy-srcset="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp 983w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-300x96.webp 300w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo-768x245.webp 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/05/Logo_Topo.webp"><noscript><img fetchpriority="high" decoding="async" width="800" height="256" src="../wp-content/uploads/2025/05/Logo_Topo.webp" class="attachment-large size-large wp-image-725" alt="" srcset="../wp-content/uploads/2025/05/Logo_Topo.webp 983w,   ../wp-content/uploads/2025/05/Logo_Topo-300x96.webp 300w,   ../wp-content/uploads/2025/05/Logo_Topo-768x245.webp 768w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-095307a elementor-widget elementor-widget-text-editor" data-id="095307a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Se inscrevendo </span><b>HOJE</b><span style="font-weight: 400;"> até as 23h59min você terá acesso a todos estes bônus exclusivos e a todo o conteúdo do Cirurgia Dermatológica do Dia a Dia </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-669f3bd elementor-widget elementor-widget-text-editor" data-id="669f3bd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>DE R$3.333,00 por apenas</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-94f1435 elementor-widget elementor-widget-heading" data-id="94f1435" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="font-size: 0.5em;">R$</span> 499<span style="font-size: 0.5em;">,95</span> </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-84a08d7 elementor-widget elementor-widget-text-editor" data-id="84a08d7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>no PIX</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-5a4a9be elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5a4a9be" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://youtube.com" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">GARANTIR VAGA</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-a8d6608 elementor-widget elementor-widget-text-editor" data-id="a8d6608" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Oportunidade exclusiva e válida apenas para essa turma!</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d27cfe2 elementor-widget elementor-widget-off-canvas" data-id="d27cfe2" data-element_type="widget" data-widget_type="off-canvas.default">
+				<div class="elementor-widget-container">
+							<div id="off-canvas-d27cfe2" class="e-off-canvas" role="dialog" aria-hidden="true" aria-label="Off-Canvas" aria-modal="true" inert="" data-delay-child-handlers="true">
+			<div class="e-off-canvas__overlay"></div>
+			<div class="e-off-canvas__main">
+				<div class="e-off-canvas__content">
+					<div class="elementor-element elementor-element-44be584 e-con-full e-flex e-con e-child" data-id="44be584" data-element_type="container">
+				<div class="elementor-element elementor-element-cfa2ee3 elementor-widget elementor-widget-heading" data-id="cfa2ee3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Garanta sua vaga hoje mesmo!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c897b13 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="c897b13" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<style>
+/* Estilo geral do formulário */
+form {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: transparent; /* Fundo transparente */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Inputs */
+form input[type="email"],
+form input[type="text"] {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff; /* Texto branco */
+  background-color: #1b2230; /* Fundo escuro */
+  border: 1px solid #FF9A0B; /* Borda dourada */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-sizing: border-box;
+}
+
+/* Placeholder */
+form input::placeholder {
+  color: #ffffff; /* Texto placeholder branco */
+  opacity: 0.8;
+}
+
+/* Efeito ao focar no input */
+form input:focus {
+  outline: none;
+  border-color: #ffd700; /* Destaque na borda dourada clara */
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+/* Checkbox e label */
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+form label {
+  font-size: 14px;
+  color: #ffffff; /* Texto branco */
+}
+
+/* Alinhamento do checkbox */
+form div[style*="display: flex"] {
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+/* GDPR Texto */
+form div[klicksend-gdpr-text] {
+  font-size: 10px;
+  color: #B3B4B7; /* Texto branco */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-align: justify;
+  padding-bottom: 16px;
+}
+
+/* Links */
+form div[klicksend-gdpr-text] a {
+  color: #FF9A0B; /* Dourado */
+  text-decoration: none;
+}
+form div[klicksend-gdpr-text] a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de envio */
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #ffffff; /* Texto branco */
+  background: #FF9A0B;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+form button:hover {
+  background: #BC730D;
+}
+
+/* Layout responsivo */
+@media (max-width: 480px) {
+  form input[type="email"],
+  form input[type="text"],
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Oculta o campo de UTMs */
+form input[name="b_zwukAV8"] {
+  display: none;
+}
+</style>
+
+<form klicksend-form-id='y7u3k59' autocomplete='off' method="post" action="//handler.send.hotmart.com/subscription/y7u3k59">
+      <input type="text" autocomplete="off" name="first_name" id="first_name" placeholder="Nome" value="" required="">
+  <input type="email" autocomplete="off" name="email" id="email" placeholder="Email" value="" required="">
+  <input type="text" autocomplete="off" name="phone" id="phone" placeholder="Whatsapp" value="" required="">
+<div klicksend-gdpr-text="" style="font-size: 10px; color: #86919a; margin-bottom: 5px; text-align: left;"><p> Caso você não queira mais receber os nosso emails, você pode remover o seu email da nossa lista de distribuição. </p><p> Para mais informações, acesse:<a href="https://hotmart.com/pt-br/legal/privacidade-de-dados/" target="_blank" rel="noopener">https://hotmart.com/pt-br/legal/privacidade-de-dados/</a> </p> </div><div style='width: 100%; display: flex'>  <input type="checkbox" autocomplete="off" name="gdpr" id="gdpr" placeholder="Concordo em receber os e-mails" value="Concordo em receber os e-mails" required=""> <label for="gdpr"> Concordo em receber os e-mails </label></div>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <input type="text" autocomplete='new-password' name="b_y7u3k59" tabindex="-1" value="">
+  </div>
+    <button klicksend-form-submit-id='y7u3k59'>Enviar</button>
+    <script type="rocketlazyloadscript">
+    var pageParams = new URLSearchParams(window.location.search);
+    var form = document.querySelector('form[klicksend-form-id="y7u3k59"]');
+    var formActionUrl = new URL(form.action);
+    var formActionSearchParams = formActionUrl.searchParams.size > 0 ? formActionUrl.searchParams.toString() + '&' : '';
+    var combinedParams = formActionSearchParams + pageParams.toString();
+
+    form.action = formActionUrl.origin + formActionUrl.pathname + '?' + combinedParams;
+  </script>
+  </form>
+
+<script type="rocketlazyloadscript">
+  var pageParams = new URLSearchParams(window.location.search);
+  var form = document.querySelector('form[klicksend-form-id="y7u3k59"]');
+  var formActionUrl = new URL(form.action);
+  var formActionSearchParams = formActionUrl.searchParams.size > 0 ? formActionUrl.searchParams.toString() + '&' : '';
+  var combinedParams = formActionSearchParams + pageParams.toString();
+
+  form.action = formActionUrl.origin + formActionUrl.pathname + '?' + combinedParams;
+
+  function handleFormSubmit(event) {
+    setTimeout(function() {
+      window.location.href = "Página de pagamento: https://pay.hotmart.com/X99942386X"; // Redireciona após envio
+    }, 2000); // Aguarda 2 segundos antes de redirecionar
+  }
+</script>
+				</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-df8d860 e-flex e-con-boxed e-con e-parent" data-id="df8d860" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="2da2dcecf0cb11671c52d6fcd167dc91" class="e-con-inner">
+				<div class="elementor-element elementor-element-ed9808e elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="ed9808e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																														</div>
+				</div>
+		<div class="elementor-element elementor-element-fa50b73 e-con-full e-flex e-con e-child" data-id="fa50b73" data-element_type="container">
+				<div class="elementor-element elementor-element-0170dd0 elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-image-box" data-id="0170dd0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					>
+				</div>
+				<div class="elementor-element elementor-element-9ee0068 elementor-invisible elementor-widget elementor-widget-button" data-id="9ee0068" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-86595e2 e-flex e-con-boxed e-con e-parent" data-id="86595e2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="e68eb4a7babfafd33aac842bcb41f395" class="e-con-inner">
+				<div class="elementor-element elementor-element-5f1acf7 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="5f1acf7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Esses são os profissionais que irão te guiar nessa jornada</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-48b6d4e e-con-full e-flex e-con e-child" data-id="48b6d4e" data-element_type="container">
+				<div class="elementor-element elementor-element-78e0bad elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-image" data-id="78e0bad" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="440" height="540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20440%20540'%3E%3C/svg%3E" class="attachment-large size-large wp-image-491" alt="" data-lazy-srcset="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Bruna.webp 440w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Bruna-244x300.webp 244w" data-lazy-sizes="(max-width: 440px) 100vw, 440px" data-lazy-src="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Bruna.webp"><noscript><img loading="lazy" decoding="async" width="440" height="540" src="../wp-content/uploads/2025/04/Foto-Bruna.webp" class="attachment-large size-large wp-image-491" alt="" srcset="../wp-content/uploads/2025/04/Foto-Bruna.webp 440w,   ../wp-content/uploads/2025/04/Foto-Bruna-244x300.webp 244w" sizes="(max-width: 440px) 100vw, 440px"></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-c7864be e-con-full e-flex e-con e-child" data-id="c7864be" data-element_type="container">
+				<div class="elementor-element elementor-element-9dd89c4 elementor-invisible elementor-widget elementor-widget-heading" data-id="9dd89c4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Prazer, eu sou a Bruna</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-19388e8 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="19388e8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Médica dermatologista formada pela Universidade Federal de Uberlândia. Como muitas colegas, não me identifiquei com a cosmiatria dentro da Dermatologia, mas encontrei na Cirurgia Dermatológica o caminho para me realizar como médica. Sou apaixonada pela precisão e pela perfeição nos mínimos detalhes de cada cirurgia, guiada pelo meu lema: “Sempre podemos melhorar”. Meu propósito é oferecer o melhor cuidado e resultado possível aos meus pacientes, mantendo-me constantemente atualizada e inspirada pela paixão de cuidar do próximo.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e5cd6ac e-con-full e-flex e-con e-child" data-id="e5cd6ac" data-element_type="container">
+		<div class="elementor-element elementor-element-9f9778c e-con-full e-flex e-con e-child" data-id="9f9778c" data-element_type="container">
+				<div class="elementor-element elementor-element-e78d5b3 elementor-invisible elementor-widget elementor-widget-heading" data-id="e78d5b3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Prazer, eu sou o Matheus</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6587d03 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="6587d03" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Médico dermatologista e cirurgião dermatológico, também formado pela Universidade Federal de Uberlândia. Descobri na Cirurgia Dermatológica a minha maior paixão dentro da medicina. Sempre busquei aprimorar meu conhecimento baseado em evidências científicas e me tornei um entusiasta pela cirurgia dermatológica avançada. Minha motivação está em encontrar as melhores estratégias para resolver desafios cirúrgicos, priorizando a cura e a satisfação dos meus pacientes.</p><p>Juntos, temos um sonho: ajudar mais pacientes a receberem o tratamento mais adequado em cirurgia dermatológica, capacitando colegas médicos interessados em atuar de forma ética, segura e fundamentada na melhor ciência disponível.</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fe7f8cf elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="fe7f8cf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="440" height="540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20440%20540'%3E%3C/svg%3E" class="attachment-large size-large wp-image-492" alt="" data-lazy-srcset="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Matheus.webp 440w,   https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Matheus-244x300.webp 244w" data-lazy-sizes="(max-width: 440px) 100vw, 440px" data-lazy-src="https://clubecirurgiadermatologica.com.br/wp-content/uploads/2025/04/Foto-Matheus.webp"><noscript><img loading="lazy" decoding="async" width="440" height="540" src="../wp-content/uploads/2025/04/Foto-Matheus.webp" class="attachment-large size-large wp-image-492" alt="" srcset="../wp-content/uploads/2025/04/Foto-Matheus.webp 440w,   ../wp-content/uploads/2025/04/Foto-Matheus-244x300.webp 244w" sizes="(max-width: 440px) 100vw, 440px"></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3765fa6 elementor-widget elementor-widget-button" data-id="3765fa6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+				
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-dc8e10c e-flex e-con-boxed e-con e-parent" data-id="dc8e10c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="e7b497a4659d2bf8f0967afb574aed76" class="e-con-inner">
+		<div class="elementor-element elementor-element-ae4d880 e-con-full e-flex e-con e-child" data-id="ae4d880" data-element_type="container">
+				<div class="elementor-element elementor-element-a93abf2 elementor-widget elementor-widget-heading" data-id="a93abf2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">F.A.Q</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-83b2083 elementor-widget elementor-widget-heading" data-id="83b2083" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Perguntas Frequentes</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-144482c e-con-full e-flex e-con e-child" data-id="144482c" data-element_type="container">
+				<div class="elementor-element elementor-element-59c1c93 elementor-widget elementor-widget-n-accordion" data-id="59c1c93" data-element_type="widget" data-settings="{&quot;default_state&quot;:&quot;expanded&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}" data-widget_type="nested-accordion.default">
+				<div class="elementor-widget-container">
+							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+						<details id="e-n-accordion-item-9410" class="e-n-accordion-item" open="">
+				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="true" aria-controls="e-n-accordion-item-9410">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> O que é o “Cirurgia Dermatologica no dia a dia”? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-9410" class="elementor-element elementor-element-ea935db e-con-full e-flex e-con e-child" data-id="ea935db" data-element_type="container">
+				<div class="elementor-element elementor-element-d4aa03c elementor-widget elementor-widget-text-editor" data-id="d4aa03c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>É um curso 100% online, com aulas gravadas, para médicos que trabalham com dermatologia, com objetivo de ensinar a teoria aliada a prática de procedimentos básicos mais comuns da Cirurgia Dermatológica.</p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-9411" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-9411">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Quem pode participar? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-9411" class="elementor-element elementor-element-7e05bf9 e-con-full e-flex e-con e-child" data-id="7e05bf9" data-element_type="container">
+				<div class="elementor-element elementor-element-443f3fa elementor-widget elementor-widget-text-editor" data-id="443f3fa" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Médicos que estão se especializando em Dermatologia ou já trabalham com a especialidade.</p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-9412" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-9412">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Existe suporte para dúvidas? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-9412" class="elementor-element elementor-element-adebe87 e-con-full e-flex e-con e-child" data-id="adebe87" data-element_type="container">
+				<div class="elementor-element elementor-element-55fc5e7 elementor-widget elementor-widget-text-editor" data-id="55fc5e7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Sim, há campo para dúvidas na plataforma em todas as aulas gravadas. Exclusivamente essa primeira turma terá encontro mensal para duvidas ao vivo.</p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-9413" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-9413">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Existe alguma garantia? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-9413" class="elementor-element elementor-element-cc764d3 e-con-full e-flex e-con e-child" data-id="cc764d3" data-element_type="container">
+				<div class="elementor-element elementor-element-a66d4d0 elementor-widget elementor-widget-text-editor" data-id="a66d4d0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Sim! Você conta com uma garantia de <strong>7 dias</strong>. Se não estiver satisfeito, pode solicitar o cancelamento e receber o seu dinheiro de volta sem complicações.</p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-9414" class="e-n-accordion-item">
+				<summary class="e-n-accordion-item-title" data-accordion-index="5" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-9414">
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Como faço para me inscrever? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-9414" class="elementor-element elementor-element-76e3c07 e-con-full e-flex e-con e-child" data-id="76e3c07" data-element_type="container">
+				<div class="elementor-element elementor-element-bf4838e elementor-widget elementor-widget-text-editor" data-id="bf4838e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Clique no botão <strong>&#8220;QUERO ENTRAR NO CIRURGIA DERMATOLÓGICA DO DIA A DIA&#8221;</strong> e preencha o formulário com seu e-mail e telefone. Depois, você será direcionado para finalizar sua inscrição e garantir sua vaga.</p><p>Se ainda tiver dúvidas, entre em contato conosco! Estamos aqui para ajudar.</p>								</div>
+				</div>
+				</div>
+					</details>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-38c4606 elementor-widget elementor-widget-button" data-id="38c4606" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+				
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-bd01f7e e-flex e-con-boxed e-con e-parent" data-id="bd01f7e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="0bb8abef3c1cf4f2f6dc378583b295e5" class="e-con-inner">
+				<div class="elementor-element elementor-element-b9e6bf9 elementor-widget elementor-widget-heading" data-id="b9e6bf9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">CLUBE DA SUTURA LTDA © Copyright 2025. Todos os direitos reservados.</h2>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/obrigado\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/quillforms\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/clubecirurgiadermatologica.com.br","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.2.1" id="hello-theme-frontend-js"></script>
+<script id="jetpack-stats-js-before">
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"240599855\",\"post\":\"274\",\"tz\":\"-3\",\"srv\":\"clubecirurgiadermatologica.com.br\",\"j\":\"1:14.5\"}") ]);
+_stq.push([ "clickTrackerInit", "240599855", "274" ]);
+</script>
+<script src="../e-202522.js" id="jetpack-stats-js" defer="" data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/clubecirurgiadermatologica.com.br\/wp-admin\/admin-ajax.php","nonce":"b722bcd730","urls":{"assets":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/clubecirurgiadermatologica.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.3" id="elementor-pro-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.28.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"home_screen":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/clubecirurgiadermatologica.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/clubecirurgiadermatologica.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e33761f5ce"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":274,"title":"Cirurgia%20Dermatol%C3%B3gica%20do%20Dia%20a%20Dia%20-%20Clube%20Cirurgia%20Dermatol%C3%B3gica","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://clubecirurgiadermatologica.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.3" id="pro-elements-handlers-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>var rocket_beacon_data = {"ajax_url":"https:\/\/clubecirurgiadermatologica.com.br\/wp-admin\/admin-ajax.php","nonce":"203936f5cb","url":"https:\/\/clubecirurgiadermatologica.com.br\/cddd-inscricao","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800}</script><script data-name="wpr-wpr-beacon" src='../wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async=""></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1748581044 -->
